@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon img{
+    width: 24px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.navbar ul {
+     display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;  
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.navbar ul li a {
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: rgb(102, 15, 136);
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* untuk ketebalan garis bawah */
+    text-underline-offset: 8px; /* untuk jarak garis bawah */
+}
+
+/* home */
+
+.container {
+    width: 100%;
+    height: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper {
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.profile-text {
+    padding: 20px;
+}
+
+.profile-text h1 {
+    font-size: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(130, 0, 252);
+}
+
+.profile-text h2 {
+    font-size: 40px;
+}
+
+.profile-text p {
+    padding-right: 20px;
+    font-size: large;
+}
+
+.button-link {
+    display: flex;
+}
+
+.btn1 {
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: rgb(130, 0, 252);
+}
+
+.btn1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-logo {
+    display: flex;
+    padding: 10px;
+}
+
+.social-logo a {
+    border: 2px solid blueviolet;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 6px 3px rgba(160, 82, 255, 0.9);
+}
+
+.social-logo img {
+    width: 20px;
+}
+
+.profile-img img {
+    margin: 30px;
+    width: 400px;
+}
+
+/* about */
+.tittle {
+    display: flex;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.tittle h1 {
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+.main-profile {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.image-tittle img {
+    width: 300px;
+    border-radius: 50%;
+    margin: 40px;
+    box-shadow: 0 0 6px 3px rgb(139, 133, 133);
+}
+
+.btn-tittle {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-tittle h1 {
+    margin: 20px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.main-tittle p {
+    margin: 20px;
+    font-size: larger;
+}
+
+.btn-hire {
+    padding: 20px;
+}
+
+.btn-hire a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 30px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: rgb(130, 0, 252);
+}
+
+.btn-hire a:hover {
+    background-color: rgb(116, 34, 192);
+}
+
+.wrapp-icon {
+    margin-bottom: 60px;
+}
+
+.social-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.social-icon li {
+    padding: 40px;
+    margin: 20px;
+    width: 222px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 3px rgb(119, 117, 117);
+}
+
+.social-icon li img {
+    text-align: center;
+}
+
+.social-icon p {
+    padding: 20px;
+}
+
+/* project */
+.asset {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.assets {
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 3px rgb(119, 117, 117);
+}
+
+.asset .assets img {
+    padding: 20px;
+    width: 100px;
+}
+
+.assets h4 {
+    padding: 5px;
+}
+
+.assets p {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* contact */
+.text-profile {
+    margin-bottom: 80px;
+}
+
+.text-profile h1 {
+    padding: 10px;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.text-profile p {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.find {
+    padding: 160px;
+    width: 550px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 3px rgb(119, 117, 117);
+}
+
+.font {
+    text-align: center;
+    padding: 20px;
+}
+
+.mail {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.mail img {
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.wrapp-form {
+    width: 625px;
+}
+
+.name-form {
+    display: flex;
+    gap: 10px;
+}
+
+.name-form input {
+    border-radius: 10px;
+    width: 50%;
+
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-subject {
+    margin-top: 20px;
+}
+
+.contact-subject input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.wrapp-form textarea {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 300px;
+    border-radius: 10px;
+}
+
+.fbutton {
+    padding-left: 70%;
+    padding-right: 20%;
+}
+
+.picture-button {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 18px;
+    background-color: rgb(130, 0, 252);
+}
+
+.picture-button:hover {
+    background-color: rgb(76, 8, 139);
+}
+
+.picture-button h4 {
+    font-size: 20px;
+    color: white;
+}
+
+.picture-button img {
+    width: 25px;
+    height: 20px;
+    text-align: center;
+}
+
+.button2 img {
+    width: 20px;
+    color: white;
+    align-items: center;
+}
+
+/* footer */
+.ftr {
+    margin-top: 40px;
+}
+
+.container-ftr {
+    justify-content: center;
+}
+
+.list-footer {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.type-list {
+    display: flex;
+    justify-content: center;
+}
+
+.type-list li {
+    display: flex;
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.logo-icon {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.logo-icon img {
+    width: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.text-footer {
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.text-footer p {
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 962px) {
+
+    /* home */
+    .wrapper {
+        margin: 20px;
+    }
+
+    .profile-img img {
+        display: none;
+    }
+
+    .profile-text p {
+        width: 50%;
+    }
+
+    /* about */
+    .main-tittle h1 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    /* contact */
+    .form {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .find {
+        width: 75%;
+        padding: 100px;
+    }
+
+    .mail {
+        gap: 10px;
+    }
+
+    .fbutton {
+        align-items: center;
+        padding-left: 40%;
+        padding-right: 40%;
+    }
+
+}
+
+@media screen and (max-width: 785px) {
+    /* navbar */
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .hidden li a{
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        padding-right: 40px;
+    }
+
+    /* home */
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profile-text p {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    /* about */
+    .main-profile {
+        flex-direction: column;
+    }
+
+    .image-tittle {
+        text-align: center;
+    }
+
+    .image-tittle img {
+        width: 200px;
+    }
+
+    .main-tittle h1 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .main-tittle p {
+        font-size: 20px;
+    }
+
+    .btn-hire {
+        text-align: center;
+    }
+
+    .btn-hire a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .social-icon {
+        width: 100%;
+    }
+
+    .social-icon li {
+        text-align: center;
+    }
+
+    .assets {
+        width: 50%;
+        padding: 60px;
+    }
+
+    .assets img {
+        width: 100%;
+    }
+
+    /* contact */
+    .find {
+        width: 450px;
+        padding: 120px;
+    }
+
+    .mail {
+        gap: 10px;
+    }
+
+    .font h1 {
+        text-align: center;
+    }
+
+    .wrapp-form {
+        width: 450px;
+    }
+
+    .fbutton {
+        align-items: center;
+        padding-left: 39%;
+        padding-right: 39%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* home */
+    .profile-text p {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .wrapp-tittle {
+        justify-content: center;
+    }
+
+    /* about */
+    .tittle h1 {
+        font-size: 50px;
+    }
+
+    .main-profile {
+        flex-direction: column;
+    }
+
+    .image-tittle {
+        text-align: center;
+    }
+
+    .image-tittle img {
+        width: 170px;
+    }
+
+    .main-tittle {
+        margin-bottom: 20px;
+    }
+
+    .main-tittle h1 {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .main-tittle p {
+        font-size: 20px;
+    }
+
+    .btn-hire {
+        text-align: center;
+    }
+
+    /* contact */
+    .find {
+        padding: 80px;
+        width: 350px;
+    }
+
+    .font h1 {
+        text-align: center;
+    }
+
+    .wrapp-form {
+        width: 350px;
+    }
+
+    .fbutton {
+        align-items: center;
+        padding-left: 38%;
+        padding-right: 38%;
+    }
+
+}
